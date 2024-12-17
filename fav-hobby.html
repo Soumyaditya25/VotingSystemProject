@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question Page</title>
+    <link rel="stylesheet" href="fav.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('https://imgs.search.brave.com/CO1FO8Nfc0DBrmX3U8oOgPqhDlNpbYhBbAf0bWsMpBs/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/cGl4YWJheS5jb20v/cGhvdG8vMjAxNy8x/MS8xMS8yMS8wOC9w/YWludC0yOTQwNTEz/XzY0MC5qcGc');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #fff;
+        }
+        .container {
+            text-align: center;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 600px;
+            margin: 50px auto;
+        }
+        h2 {
+            margin-bottom: 20px;
+            color: #ffeb3b; 
+        }
+        .option{
+            color: aliceblue;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>What is your favorite Hobby ?</h2>
+        <div class="options">
+            <label class="option">
+                <input type="radio" name="language" value="Dancing">
+                Dancing
+            </label>
+            <label class="option">
+                <input type="radio" name="language" value="Drawing">
+                Drawing
+            </label>
+            <label class="option">
+                <input type="radio" name="language" value="Singing">
+                Singing
+            </label>
+            <label class="option">
+                <input type="radio" name="language" value="Other">
+                Other
+            </label>
+        </div>
+
+        
+        <div class="buttons">
+            <a href="mainPage.html" class="button">Return Homepage</a>
+            <button class="button" id="submit">Submit</button>
+            <button class="button" id="view-results">View Results</button>
+        </div>
+    </div>
+</body>
+</html>

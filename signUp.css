@@ -30,14 +30,14 @@
     font-size: 28px;
     color: rgb(32, 135, 232);
     font-weight: 600;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
     text-align: center;
 }
 
 .subheading {
     font-size: 16px;
     color: #190303;
-    margin-bottom: 20px;
+    margin-bottom: 8px;
     text-align: center;
 }
 
@@ -104,27 +104,6 @@ button:hover {
 .google-icon {
     width: 23.5px;
     height: 23.5px;
-    margin-right: 10px;
-}
-
-.facebook-btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #3b5998;
-    color: white;
-    padding: 10px;
-    border-radius: 10px;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-    width: 100%;
-    margin: 20px auto;
-}
-
-.facebook-icon {
-    width: 20px;
-    height: 20px;
     margin-right: 10px;
 }
 
