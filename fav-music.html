@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question Page</title>
+    <link rel="stylesheet" href="fav.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url(' https://imgs.search.brave.com/M3A5zd6cYFSPrzUBjpi-27W4jq71Mq_f8Ln7Dk4SO2E/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzA2LzEwLzc3LzAx/LzM2MF9GXzYxMDc3/MDE5OV9TVkdEN2RT/SWxmMTBQSkdWcWdC/RERXV005aHRiTjRS/SS5qcGc');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #fff;
+        }
+        .container {
+            text-align: center;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 600px;
+            margin: 50px auto;
+        }
+        h2 {
+            margin-bottom: 20px;
+            color: #ffeb3b; 
+        }
+        .option{
+            color: aliceblue;
+        }
+    </style>
+   
+</head>
+<body>
+    <div class="container">
+        <h2>What is your favorite music ?</h2>
+        <form id="poll3Form">
+        <div class="options">
+            <label class="option">
+                <input type="radio" name="music" value="K-pop">
+                K-pop
+            </label>
+            <label class="option">
+                <input type="radio" name="music" value="Bollywood">
+                Bollywood
+            </label>
+            <label class="option">
+                <input type="radio" name="music" value="Pop">
+                Pop
+            </label>
+            <label class="option">
+                <input type="radio" name="music" value="Indie music ">
+                Indie music 
+            </label>
+        </div>
+
+        
+        <div class="buttons">
+            <a href="mainPage.html" class="button">Return Homepage</a>
+            <button class="button" id="submit">Submit</button>
+            <button class="button" id="view-results">View Results</button>
+        </div>
+        </form>
+    </div>
+    <script src="fav_music.js"></script>
+</body>
+</html>
