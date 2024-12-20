@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poll Results</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #303841; 
+            color: #f0f0f0; 
+        }
+        .container, .bar-chart-container {
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #3a4750; 
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            width: 100%;
+            color: #f6c90e; 
+        }
+        .chart-container {
+            flex: 1 0 30%;
+            max-width: 30%;
+            margin-bottom: 20px;
+            background-color: #3a4750;
+            border: 2px solid #f13c20;
+            border-radius: 8px;
+            padding: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        canvas {
+            max-width: 100%;
+            height: auto;
+        }
+        .button-container {
+            text-align: center;
+            width: 100%;
+            margin: 20px 0;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #f13c20; 
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #c42712; 
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Poll Results - Pie Charts</h2>
+        <div class="chart-container">
+            <canvas id="poll1ResultsChart"></canvas>
+        </div>
+        <div class="chart-container">
+            <canvas id="poll2ResultsChart"></canvas>
+        </div>
+        <div class="chart-container">
+            <canvas id="poll3ResultsChart"></canvas>
+        </div>
+        <div class="chart-container">
+            <canvas id="poll4ResultsChart"></canvas>
+        </div>
+        <div class="chart-container">
+            <canvas id="poll5ResultsChart"></canvas>
+        </div>
+        <div class="chart-container">
+            <canvas id="poll6ResultsChart"></canvas>
+        </div>
+    </div>
+    
+    <div class="button-container">
+        <button onclick="window.location.href='mainPage.html'">Return to Main Page</button>
+    </div>
+
+    <div class="bar-chart-container">
+        <h2>Poll Results - Bar Charts</h2>
+        <div class="chart-container">
+            <canvas id="poll1BarResultsChart"></canvas>
+        </div>
+        <div class="chart-container">
+            <canvas id="poll2BarResultsChart"></canvas>
+        </div>
+        <div class="chart-container">
+            <canvas id="poll3BarResultsChart"></canvas>
+        </div>
+        <div class="chart-container">
+            <canvas id="poll4BarResultsChart"></canvas>
+        </div>
+        <div class="chart-container">
+            <canvas id="poll5BarResultsChart"></canvas>
+        </div>
+        <div class="chart-container">
+            <canvas id="poll6BarResultsChart"></canvas>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="results.js"></script>
+</body>
+</html>

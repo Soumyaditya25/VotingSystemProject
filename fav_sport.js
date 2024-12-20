@@ -25,3 +25,7 @@ document.getElementById('poll1Form').addEventListener('submit', function(e) {
     alert('Your vote has been submitted!');
     window.location.href = 'mainPage.html'; 
 });
+
+document.getElementById('view-results').addEventListener('click',function(e) {
+    window.location.href = 'results.html'; 
+})
