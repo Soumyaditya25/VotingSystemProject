@@ -25,34 +25,31 @@ body {
     border-radius: 50%;
 }
 
-/* Hero Section */
 .hero-section {
-    background-image: url('VotingImg.jpg');
+    background-image: url('MainPageImg.jpg');
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover; /* Ensure the image covers the entire section */
-    height: 100vh; /* Set the height to fill the viewport */
+    background-size: cover; 
+    height: 60vh; 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: rgb(27, 27, 27);
     text-align: center;
 }
 
 .hero-section h1 {
     font-size: 3rem;
     margin-bottom: 10px;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Add shadow for better readability */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 }
 
 .hero-section p {
     font-size: 1.5rem;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Add shadow for better readability */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); 
 }
 
-
-/* Main Content */
 main {
     flex: 1;
     display: flex;
@@ -87,7 +84,6 @@ main {
     background-color: #e6f7ff;
 }
 
-/* Footer Styles */
 footer {
     text-align: center;
     padding: 10px 0;

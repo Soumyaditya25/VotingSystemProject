@@ -17,6 +17,6 @@ signin.addEventListener("click", (e) => {
     if (isPresent) {
         window.location.href = "mainPage.html"; 
     } else {
-        alert("Incorrect Email/Phone Number or Password! Please try again.");
+        alert("Incorrect Email or Password! Please try again.");
     }
 });
