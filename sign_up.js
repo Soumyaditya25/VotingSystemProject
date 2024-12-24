@@ -29,6 +29,6 @@ signup.addEventListener("click", function (event) {
         localStorage.setItem("users", JSON.stringify(users));
 
         alert("User Registered Successfully!");
-        window.location.href = "mainPage.html"; 
+        window.location.href = "Login.html"; 
     }
 });

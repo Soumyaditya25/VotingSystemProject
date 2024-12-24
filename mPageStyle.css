@@ -123,3 +123,20 @@ footer {
 .results-button:hover {
     background-color: #ffd700;
 }
+.button-container {
+    padding: 10px 0;
+    text-align: center; 
+}
+
+.button-container a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f13c20; 
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+}
+

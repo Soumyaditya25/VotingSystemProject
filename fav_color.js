@@ -11,7 +11,6 @@ document.getElementById('poll5Form').addEventListener('submit', function(e) {
     }
 
 
-    
     const userData = JSON.parse(localStorage.getItem('userPollData')) || {};
 
     if (!userData[userEmail]) {
