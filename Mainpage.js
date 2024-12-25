@@ -8,7 +8,7 @@ function getCurrentUserData() {
         document.getElementById('currentUserName').textContent = currentUser.name;
         document.getElementById('currentUserEmail').textContent = currentUser.email;
     } else {
-        window.location.href = 'index.html';
+        window.location.href = 'Login.html';
     }
 }
 
@@ -29,7 +29,7 @@ document.addEventListener('click', function(event) {
 
 function handleLogout() {
     localStorage.removeItem('userEmail'); 
-    window.location.href = 'Login.html';
+    window.location.href = 'index.html';
 }
 
 function toggleDropdown() {
