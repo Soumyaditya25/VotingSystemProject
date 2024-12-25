@@ -11,10 +11,28 @@
     
     <nav class="navbar">
         <div class="logo">VoteTogether</div>
+        <div class="nav-buttons">
+            <div class="profile-container">
+                <div class="profile-icon" onclick="toggleDropdown()">
+                    <img src="https://i.pinimg.com/736x/d3/7b/02/d37b020e87945ad7f245e48df752ed03.jpg" alt="Profile">
+                </div>
+                <div class="dropdown-menu" id="profileDropdown">
+                    <div class="dropdown-header">
+                        <img src="https://i.pinimg.com/736x/d3/7b/02/d37b020e87945ad7f245e48df752ed03.jpg" alt="Profile">
+                        <div class="user-info">
+                            <span class="user-name" id="currentUserName">Loading...</span>
+                            <span class="user-email" id="currentUserEmail">Loading...</span>
+                        </div>
+                    </div>
+                    <div class="dropdown-divider"></div>
+                    <a href="#" class="dropdown-item">Profile</a>
+                    <a href="#" class="dropdown-item">Settings</a>
+                    <div class="dropdown-divider"></div>
+                    <a href="#" onclick="handleLogout()" class="dropdown-item logout">Logout</a>
+                </div>
+            </div>
+        </div>
     </nav>
-    <div class="profile-icon">
-        <img src="https://i.pinimg.com/736x/d3/7b/02/d37b020e87945ad7f245e48df752ed03.jpg" alt="Profile">
-    </div>
     
     <div class="hero-section">
         <h1>Welcome to the Voting System</h1>
@@ -31,21 +49,20 @@
             <div class="question-card"><a href="fav-hobby.html">Fav Hobby</a></div>
         </div>
     </main>
-    <div class="results-button-container"> 
-        <a href="results.html" class="button results-button">View Poll Results</a>
-    </div>
+
+    <section class="live-votes">
+        <h2>Live Voting Activity</h2>
+        <div id="live-votes-container"></div>
+    </section>
 
     <div class="button-container">
-        <a onclick="resetResponce()" class="button new-button">Reset Results</a>
+        <a href="results.html" class="button results-button">View Poll Results</a>
+        <a onclick="resetResponse()" class="button new-button">Reset Results</a>
     </div>
 
     <footer>
-        <p>&copy; 2024 Voting System. All Rights Reserved.</p>
+        <p>&copy; 2024 VoteTogether. All Rights Reserved.</p>
     </footer>
-    <script>
-        function resetResponce(){
-            localStorage.setItem('userPollData',JSON.stringify({}));
-        }
-    </script>
+    <script src="Mainpage.js"></script>
 </body>
 </html>
