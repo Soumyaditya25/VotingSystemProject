@@ -8,7 +8,7 @@ function getCurrentUserData() {
         document.getElementById('currentUserName').textContent = currentUser.name;
         document.getElementById('currentUserEmail').textContent = currentUser.email;
     } else {
-        window.location.href = 'Login.html';
+        window.location.href = 'index.html';
     }
 }
 
