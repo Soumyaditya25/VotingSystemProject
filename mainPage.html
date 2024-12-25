@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voting System</title>
+    <link rel="stylesheet" href="mPageStyle.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <nav class="navbar">
+        <a href="index.html"><div class="logo">VoteTogether</div></a>
+    </nav>
+    <div class="profile-icon">
+        <img src="https://i.pinimg.com/736x/d3/7b/02/d37b020e87945ad7f245e48df752ed03.jpg" alt="Profile">
+    </div>
+    
+    <div class="hero-section">
+        <h1>Welcome to the Voting System</h1>
+        <p>Vote for your favorite topics and share your opinions!</p>
+    </div>
+
+    <main class="categories">
+        <div class="questions-container">
+            <div class="question-card"><a href="fav-sport.html">Fav Sport</a></div>
+            <div class="question-card"><a href="fav-programming.html">Fav Language</a></div>
+            <div class="question-card"><a href="fav-music.html">Fav Music</a></div>
+            <div class="question-card"><a href="fav-food.html">Fav Food</a></div>
+            <div class="question-card"><a href="fav-color.html">Fav Color</a></div>
+            <div class="question-card"><a href="fav-hobby.html">Fav Hobby</a></div>
+        </div>
+    </main>
+    <div class="results-button-container"> 
+        <a href="results.html" class="button results-button">View Poll Results</a>
+    </div>
+
+    <div class="button-container">
+        <a onclick="resetResponce()" class="button new-button">Reset Results</a>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Voting System. All Rights Reserved.</p>
+    </footer>
+    <script>
+        function resetResponce(){
+            localStorage.setItem('userPollData',JSON.stringify({}));
+        }
+    </script>
+</body>
+</html>

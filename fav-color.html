@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question Page</title>
+    <link rel="stylesheet" href="fav.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('https://imgs.search.brave.com/yJ_WgSk1lPms0Qb-HEp71FcKJ48CnGQEUzQrzTGESGc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS1waG90/by9hYnN0cmFjdC1j/b2xvci1wb3dkZXIt/ZXhwbG9zaW9uLXdo/aXRlLWJhY2tncm91/bmQtZnJlZXplLW1v/dGlvbi1kdXN0LXNw/bGFzaF8zNjMyNi0x/ODA1LmpwZz9zZW10/PWFpc19oeWJyaWQ');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #fff;
+        }
+        .container {
+            text-align: center;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 600px;
+            margin: 50px auto;
+        }
+        h2 {
+            margin-bottom: 20px;
+            color: #ffeb3b; 
+        }
+        .option{
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>What is your favorite color ?</h2>
+        <form id="poll5Form">
+        <div class="options">
+            <label class="option">
+                <input type="radio" name="color" value="Pink">
+                Pink
+            </label>
+            <label class="option">
+                <input type="radio" name="color" value="Black">
+                Black
+            </label>
+            <label class="option">
+                <input type="radio" name="color" value="Blue">
+                Blue
+            </label>
+            <label class="option">
+                <input type="radio" name="color" value="Other">
+                Other
+            </label>
+        </div>
+
+        
+        <div class="buttons">
+            <a href="mainPage.html" class="button">Return Homepage</a>
+            <button class="button" id="submit">Submit</button>
+        </div>
+        </form>
+    </div>
+    <script src="fav_color.js"></script>
+</body>
+</html>

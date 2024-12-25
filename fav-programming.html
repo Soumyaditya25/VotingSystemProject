@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question Page</title>
+    <link rel="stylesheet" href="fav.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('https://imgs.search.brave.com/eCBGAaRzDrtI960jhVVi8xwCiyI3r1xav2mGThF-RX8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS1waG90/by9wcm9ncmFtbWlu/Zy1jb2RlLWFic3Ry/YWN0LXNjcmVlbi1z/b2Z0d2FyZS1kZXZl/bG9wZXItY29tcHV0/ZXItY29kZS1kZXZl/bG9wbWVudF80MzI4/NC02NS5qcGc_c2Vt/dD1haXNfaHlicmlk');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #fff;
+        }
+        .container {
+            text-align: center;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 600px;
+            margin: 50px auto;
+        }
+        h2 {
+            margin-bottom: 20px;
+            color: #ffeb3b; 
+        }
+        .option{
+            color: aliceblue;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>What is your favorite programming language ?</h2>
+        <form id="poll2Form">
+        <div class="options">
+            <label class="option">
+                <input type="radio" name="language" value="JavaScript">
+                JavaScript
+            </label>
+            <label class="option">
+                <input type="radio" name="language" value="Python">
+                Python
+            </label>
+            <label class="option">
+                <input type="radio" name="language" value="Java">
+                Java
+            </label>
+            <label class="option">
+                <input type="radio" name="language" value="C++">
+                C++
+            </label>
+        </div>
+
+        
+        <div class="buttons">
+            <a href="mainPage.html" class="button">Return Homepage</a>
+            <button class="button" id="submit">Submit</button>
+        </div>
+        </form>
+    </div>
+    <script src="fav_language.js"></script>
+
+</body>
+</html>
