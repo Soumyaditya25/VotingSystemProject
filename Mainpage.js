@@ -1,3 +1,57 @@
+document.addEventListener("DOMContentLoaded", () => {
+    const themeToggle = document.getElementById("themeToggle");
+
+    
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme === "dark") {
+        document.body.classList.add("dark-theme");
+        themeToggle.checked = true;
+        applyDarkThemeToElements();
+    }
+
+    themeToggle.addEventListener("change", () => {
+        if (themeToggle.checked) {
+            document.body.classList.add("dark-theme");
+            applyDarkThemeToElements();
+            localStorage.setItem("theme", "dark");
+        } else {
+            document.body.classList.remove("dark-theme");
+            removeDarkThemeFromElements();
+            localStorage.setItem("theme", "light");
+        }
+    });
+});
+
+function applyDarkThemeToElements() {
+    document.querySelector(".navbar").classList.add("dark-theme");
+    document.querySelector(".hero-section").classList.add("dark-theme");
+    document.querySelector(".categories").classList.add("dark-theme");
+    document.querySelector(".live-votes").classList.add("dark-theme");
+    document.querySelector("footer").classList.add("dark-theme");
+
+    const dropdown = document.getElementById("profileDropdown");
+    if (dropdown) dropdown.classList.add("dark-theme");
+
+    document.querySelectorAll(".question-card").forEach(card => {
+        card.classList.add("dark-theme");
+    });
+}
+
+function removeDarkThemeFromElements() {
+    document.querySelector(".navbar").classList.remove("dark-theme");
+    document.querySelector(".hero-section").classList.remove("dark-theme");
+    document.querySelector(".categories").classList.remove("dark-theme");
+    document.querySelector(".live-votes").classList.remove("dark-theme");
+    document.querySelector("footer").classList.remove("dark-theme");
+
+    const dropdown = document.getElementById("profileDropdown");
+    if (dropdown) dropdown.classList.remove("dark-theme");
+
+    document.querySelectorAll(".question-card").forEach(card => {
+        card.classList.remove("dark-theme");
+    });
+}
+
 function getCurrentUserData() {
     const userEmail = localStorage.getItem('userEmail');
     const users = JSON.parse(localStorage.getItem('users')) || [];
@@ -45,12 +99,12 @@ function toggleDropdown() {
 }
 
 const mockVotes = [
-    { category: "Sport", choice: "Football", user: "Alex" },
-    { category: "Programming", choice: "Python", user: "Sarah" },
-    { category: "Music", choice: "Rock", user: "Mike" },
-    { category: "Food", choice: "Italian", user: "Emma" },
-    { category: "Color", choice: "Blue", user: "John" },
-    { category: "Hobby", choice: "Gaming", user: "Lisa" }
+    { category: "Sport", choice: "Football", user: "Sai" },
+    { category: "Programming", choice: "Python", user: "Soumyaditya" },
+    { category: "Music", choice: "Rock", user: "Ananya" },
+    { category: "Food", choice: "Italian", user: "Chaitanya" },
+    { category: "Color", choice: "Blue", user: "Kanishka" },
+    { category: "Hobby", choice: "Gaming", user: "Sandeep" }
 ];
 
 function addVote() {
