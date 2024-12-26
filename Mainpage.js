@@ -86,18 +86,6 @@ function handleLogout() {
     window.location.href = 'index.html';
 }
 
-function toggleDropdown() {
-    const dropdown = document.getElementById('profileDropdown');
-    dropdown.classList.toggle('show');
-
-    document.addEventListener('click', function(event) {
-        const profile = document.querySelector('.profile-container');
-        if (!profile.contains(event.target)) {
-            dropdown.classList.remove('show');
-        }
-    });
-}
-
 const mockVotes = [
     { category: "Sport", choice: "Football", user: "Sai" },
     { category: "Programming", choice: "Python", user: "Soumyaditya" },
